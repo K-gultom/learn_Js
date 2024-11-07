@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>String Template</title>
+</head>
+<body>
+    <script>
+        const name = "Yehezkiel Gultom";
+        const firstName = "Yehezkiel";
+        const lastName = "Gultom";
+
+        const template = `name: ${name} `;
+        const test = `name: ${name} ${firstName} ${lastName} `;
+
+        console.info(template);
+        console.info(test);
+
+
+        // Bisa untuk digunakan logika juga
+
+        const nilai = 80;
+        const template2 = `Name : ${name}, Lulus : ${nilai > 75} `;
+        console.info(template2);
+
+
+        // multiline template
+
+        const multiLine = `Hai, nama saya Yehezkiel, 
+gultom,
+Saya Pengajar di Palcomtech kursus`;
+
+        document.writeln("<pre>");
+        document.writeln(multiLine);
+        document.writeln("<pre>");
+
+    </script>
+</body>
+</html>

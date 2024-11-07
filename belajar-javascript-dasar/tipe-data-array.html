@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tipe Data Array</title>
+</head>
+<body>
+    
+    <script>
+
+        let arrayKosong = [];
+
+        let arrayNama = ["Yehezkiel", "Gultom", "Palembang"];
+
+
+        const names = [];
+
+        // untuk menambahkan data kedalam array
+        names.push("Yehezkiel");
+        names.push("Gultom", "Palembang");
+        names.push("David", "Medan");
+
+        
+        // mengetahui panjang array
+        let pnjang = names.length;
+
+        // mengganti data didalam array
+        names[2] = "Jakarta";
+        names[1] = "Bogor";
+
+
+        // Menghapus array
+
+        delete names[1];
+
+        // Cara mengambil data by order array
+        console.info(names[0]);
+
+        // tampilan tabel di console log
+        console.table(names)
+
+
+        names[1] = "Bogor";
+        console.table(names)
+
+        
+        names.push(["Yehezkiel", "Gultom"]);
+
+        console.table(names);
+
+    </script>
+</body>
+</html>
